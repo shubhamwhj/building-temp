@@ -11,11 +11,7 @@ screen = pygame.display.set_mode((width,height))
 building = pygame.Rect(5,200,30,400)
 
 
-def draw_building():
-    pygame.draw.rect(screen,[255,255,255],building)
-    building.x=building.x+40
-    building.height=random.randint(100, 500)
-    building.y=height-building.height
+#create a funtion drawBuilding
 
 #screen.fill((50,150,255))
     
@@ -27,7 +23,7 @@ while True:
             sys.exit()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
-                draw_building()
+                #call the drawBuilding function
             
   
    
